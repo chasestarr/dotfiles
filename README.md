@@ -1,10 +1,8 @@
 ## .files
 
-**install**
+**install (creates symlinks to home folder)**
 
 ```console
 $ make
 ```
-
-This will create symlinks from this repo to your home folder.
 
