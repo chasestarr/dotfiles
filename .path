@@ -1,0 +1,6 @@
+# GOPATH ~
+export GOPATH=$HOME/Dropbox/go
+export PATH=$PATH:$GOPATH
+
+# ELIXIR PATH ~
+export PATH="$PATH:/usr/local/Cellar/elixir/1.3.4/bin"
