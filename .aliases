@@ -57,3 +57,9 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Ping shortcut
+alias png='ping 8.8.8.8'
+
+# Open md file with Markdown app
+alias md='markdown'
