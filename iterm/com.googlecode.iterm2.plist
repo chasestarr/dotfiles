@@ -2431,7 +2431,11 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>7FB6B769-6132-4CB2-A627-C6D064D83851</string>
+	<key>DimBackgroundWindows</key>
+	<false/>
 	<key>DimInactiveSplitPanes</key>
+	<false/>
+	<key>DimOnlyText</key>
 	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
@@ -2502,7 +2506,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>200 122 796 473 0 0 1280 778 </string>
+	<string>200 214 796 473 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>1 4 1277 773 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -2665,13 +2669,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.097591757774353027</real>
+				<real>0.084167890250682831</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.097522415220737457</real>
+				<real>0.083763569593429565</real>
 				<key>Red Component</key>
-				<real>0.097432754933834076</real>
+				<real>0.083216063678264618</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -2715,12 +2719,16 @@
 			<real>0.0</real>
 			<key>Cursor Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.42352941632270813</real>
+				<real>0.43302339315414429</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.42352941632270813</real>
+				<real>0.87257516384124756</real>
 				<key>Red Component</key>
-				<real>0.42352941632270813</real>
+				<real>0.99257844686508179</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -2737,12 +2745,16 @@
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.42352941632270813</real>
+				<real>0.13962185382843018</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.42352941632270813</real>
+				<real>0.13961949944496155</real>
 				<key>Red Component</key>
-				<real>0.42352941632270813</real>
+				<real>0.13962365686893463</real>
 			</dict>
 			<key>Cursor Type</key>
 			<integer>2</integer>
