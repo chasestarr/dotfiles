@@ -55,7 +55,7 @@ prompt_git() {
 
     [ -n "${s}" ] && s=" [${s}]";
 
-    echo -e "${1}${branchName}${2}${s}";
+    echo -e "${1}${2}${branchName}${3}${s}";
   else
     return;
   fi;
@@ -97,7 +97,7 @@ if [[ "${SSH_TTY}" ]]; then
 fi;
 PS1+="\[${white}\]🍊  ";
 PS1+="\[${green}\]\W"; # working directory full path
-PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+PS1+="\$(prompt_git \"\[${white}\] on \" \"\[${yellow}\]\" \"\[${cyan}\]\")"; # Git repository details
 PS1+="\[${white}\] \$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
 
