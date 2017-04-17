@@ -1,3 +1,6 @@
+# Map v ---> nvim
+alias v='nvim'
+
 # Easier navigation: .., ..., ...., ....., ~
 alias ..='cd ..'
 alias ...="cd ../.."
