@@ -1,5 +1,5 @@
 # GOPATH ~
-export GOPATH=$HOME/Dropbox/go
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH
 
 # ELIXIR PATH ~
