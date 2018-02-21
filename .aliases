@@ -13,7 +13,7 @@ alias ~="cd ~"
 # https://github.com/ogham/exa
 alias l='exa -l --git'
 alias ll='exa -al --git'
-alias lll='exa -alRT --level=2 --ignore-glob=node_modules'
+alias lll='exa -alRT --git --level=2 --ignore-glob=node_modules'
 # alias l='ls -al'
 # alias ll='ls -l'
 # alias lll='ls -a'
