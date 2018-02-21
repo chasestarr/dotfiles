@@ -10,6 +10,7 @@ alias cd..='cd ..'
 alias ~="cd ~"
 
 # ls shortcuts
+# https://github.com/ogham/exa
 alias l='exa -l --git'
 alias ll='exa -al --git'
 alias lll='exa -alRT --level=2 --ignore-glob=node_modules'
