@@ -24,6 +24,17 @@ alias gd='git diff'
 alias gds='git diff --stat'
 alias gc='git commit'
 alias ggo='git checkout -b'
+alias gu='git reset HEAD~' # undo last commit
+
+# Kubectl aliases ~
+alias k='kubectl'
+alias kc='kubectl config'
+alias kcc='kubectl config current-context'
+alias kcd='kubectl config use-context'
+alias kd='kubectl describe'
+alias kg='kubectl get'
+alias kgp='kubectl get pods'
+alias kgs='kubectl get svc'
 
 # Godoc server ~
 alias godocs='godoc -http=:6060 | echo 🍏  server running on port 6060'
@@ -66,3 +77,12 @@ alias png='ping 8.8.8.8'
 
 # Open md file with Markdown app
 alias md='markdown'
+
+# points to http2 build of node
+alias node-h2='/Users/chasestarr/gigster/ghclones/http2/node'
+
+# logs into gigster aws
+alias awsgigster='eval $(echo $(aws ecr get-login | cut -d " " -f 1-6 ) 804879515677.dkr.ecr.us-east-1.amazonaws.com)'
+
+# logs into current aws profile ecr
+alias ecr-login='eval $(aws ecr get-login --no-include-email)'

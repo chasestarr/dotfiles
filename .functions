@@ -93,6 +93,6 @@ gogo(){
 gif(){
   in="$1"
   out=${in%.*}
-  ffmpeg -i ${in} -s 600x400 -pix_fmt rgb24 -r 18 -f gif - | gifsicle --optimize=3 --delay=3 > "${out}.gif"
+  ffmpeg -i ${in} -s 1024x600 -pix_fmt rgb24 -r 18 -f gif - | gifsicle --optimize=3 --delay=3 > "${out}.gif"
 };
 

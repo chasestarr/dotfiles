@@ -2,5 +2,9 @@
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH
 
+# GOBIN ~
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+
 # ELIXIR PATH ~
 export PATH="$PATH:/usr/local/Cellar/elixir/1.3.4/bin"
