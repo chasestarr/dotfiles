@@ -7,4 +7,8 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
 # ELIXIR PATH ~
-export PATH="$PATH:/usr/local/Cellar/elixir/1.3.4/bin"
+export PATH=$PATH:/usr/local/Cellar/elixir/1.3.4/bin
+
+# LOCAL BINARIES ~
+export LOCAL=$HOME/bin
+export PATH=$PATH:$LOCAL
