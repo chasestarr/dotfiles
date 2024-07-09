@@ -1,23 +1,45 @@
-#!/bin/bash
+alias v='nvim'
+alias ..='cd ..'
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias cd..='cd ..'
+alias ~="cd ~"
 
-# Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
-    [ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
+# https://github.com/ogham/exa
+alias l='exa -l --git'
+alias ll='exa -al --git'
 
+alias gl='git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short'
+alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat'
+alias ga='git add'
+alias gb='git branch'
+alias gs='git status'
+alias gd='git diff'
+alias gds='git diff --stat'
+alias gc='git commit'
+alias ggo='git checkout -b'
+alias gu='git reset HEAD~' # undo last commit
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/chasestarr/Desktop/google-cloud-sdk/path.bash.inc' ]; then source '/Users/chasestarr/Desktop/google-cloud-sdk/path.bash.inc'; fi
+# Print each PATH entry on a separate line
+alias echopath='echo -e ${PATH//:/\\n}'
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/chasestarr/Desktop/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/chasestarr/Desktop/google-cloud-sdk/completion.bash.inc'; fi
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+alias png='ping 8.8.8.8'
 
-export PATH="$HOME/.cargo/bin:$PATH"
+export EDITOR='vim';
+export LESS_TERMCAP_md="${yellow}";
+export MANPAGER='less -X';
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git}/*" 2> /dev/null'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+bind -x '"\C-p": v $(fzf);'
+
+function mkd() {
+  mkdir -p "$@" && cd "$_";
+}
+
+function vv() {
+  local filename=$(fzf)
+  v $filename
+}
